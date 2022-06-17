@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="bootstrap/dist/css/bootstrap.min.css"    rel="stylesheet" type="text/css">
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"  ></script>
+    <script defer src="fontawesome-free-5.15.4-web/js/all.js"  ></script>
+  </head>
+  <body style="background-color: #616161;">   
+
+     <!-- Aqui é criado a barra do menu principal -->
+
+    <nav class="navbar navbar-dark" >      
+      <div class="container-fluid">         
+        <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <i class="fa fa-bars" style="color:#007bff; font-size:28px;"></i>        
+        </button>
+        <a class="navbar-brand" id="navColor" href="index.html">BMW</a>
+        <a title="Login" href="login.html" id="navColor"><i class="far fa-user" id="iconeMenu" ></i></a>
+        <div class="offcanvas offcanvas-start bg-dark"   tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-body"> 
+            <div class="offcanvas-header">     
+            </div> <br>
+            <ul class="navbar-nav  flex-grow-1 pe-3 bg-dark" >
+              <li class="nav-item">
+                <a class="nav-link item active" aria-current="page" href="index.html" id="navColor">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link item" href="produtos.html" id="navColor">Produtos</a>
+              </li>
+          
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Aqui é criado um container onde contem o codigo do carrosel -->
+
+    <div class="container h-50">
+      <div class="row">
+        <div class="col-12">
+          <div id="carouselSite" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselSite" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselSite" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselSite" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active"> 
+                    <img src="img/BMWI8.jpg" class="img-fluid" >
+                </div>
+                <div class="carousel-item ">
+                  <img src="img/bmwx2.jpg" class="img-fluid width=100%" >
+                </div>
+                <div class="carousel-item ">
+                  <img src="img/BMW M3.jpg" class="img-fluid" >
+                </div>
+                
+
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#carouselSite" type="button" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon"></span>
+               <span class="sr-only">Anterior</span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#carouselSite" type="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Próximo</span>
+            </button>
+          </div> 
+        </div>
+      </div> 
+    </div>   
+    
+    <!-- Aqui é criado o codigo dos cards de produtos -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6" >
+            <div class="card mb-3" id="card">
+                <img src="img/bmwx1.jpg" class="card-img-top" id="imgs" alt="...">
+                <div class="card-body" id="cardIcone">
+                  <button type="button" class="btn bg-light" onclick="window.location.href = 'produtos.html'">Detalhes</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6" >
+          <div class="card mb-3" id="card">
+              <img src="img/bmwx2.jpg" class="card-img-top" id="imgs" alt="...">
+              <div class="card-body" id="cardIcone">
+                <button type="button" class="btn bg-light" onclick="window.location.href = 'produtos.html'">Detalhes</button>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6" >
+        <div class="card mb-3" id="card">
+            <img src="img/bmxx3.jpg" class="card-img-top" id="imgs" alt="...">
+            <div class="card-body" id="cardIcone">
+              <button type="button" class="btn bg-light" onclick="window.location.href = 'produtos.html'">Detalhes</button>
+            </div>
+        </div>
+    </div>                        
+      </div>            
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6" >
+            <div class="card mb-3" id="card">
+                <img src="img/bmwx4.jpg" class="card-img-top" id="imgs" alt="...">
+                <div class="card-body" id="cardIcone">
+                  <button type="button" class="btn bg-light" onclick="window.location.href = 'produtos.html'">Detalhes</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6" >
+          <div class="card mb-3" id="card">
+              <img src="img/bmwx5.jpg" class="card-img-top" id="imgs" alt="...">
+              <div class="card-body" id="cardIcone">
+                <button type="button" class="btn bg-light" onclick="window.location.href = 'produtos.html'">Detalhes</button>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6" >
+        <div class="card mb-3" id="card">
+            <img src="img/bmwx6.jpg" class="card-img-top" id="imgs" alt="...">
+            <div class="card-body" id="cardIcone">
+              <button type="button" class="btn bg-light" onclick="window.location.href = 'produtos.html'">Detalhes</button>
+            </div>
+        </div>
+    </div>                        
+      </div>            
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  
+  </body>
+</html>

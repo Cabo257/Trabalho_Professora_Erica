@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="bootstrap/dist/css/bootstrap.min.css"    rel="stylesheet" type="text/css">
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"  ></script>
+    <script defer src="fontawesome-free-5.15.4-web/js/all.js"  ></script>
+  </head>
+  <body style="background-color: #616161;">
+
+    <!-- Aqui é criado a barra do menu principal -->
+
+    <nav class="navbar navbar-dark" >      
+      <div class="container-fluid">         
+        <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <i class="fa fa-bars" style="color:#007bff; font-size:28px;"></i>        
+        </button>
+        <a class="navbar-brand" id="navColor" href="index.html">BMW</a>
+        <a title="Login" href="login.html" id="navColor"><i class="far fa-user" id="iconeMenu" ></i></a>
+        <div class="offcanvas offcanvas-start bg-dark"   tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-body"> 
+            <div class="offcanvas-header">     
+            </div> <br>
+            <ul class="navbar-nav  flex-grow-1 pe-3 bg-dark" >
+              <li class="nav-item">
+                <a class="nav-link item active" aria-current="page" href="index.html" id="navColor">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link item" href="produtos.html" id="navColor">Produtos</a>
+              </li>
+             
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Aqui é criado o codigo dos cards de produtos -->
+
+    <div class="container">
+      <div class="row">
+          <div class="col-md-4 col-sm-6" >
+              <div class="card mb-3" id="card">
+                  <img src="img/bmwx1.jpg" class="card-img-top" id="imgs" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" id="textCard">Modelo: X1</h5>
+                    <p class="card-text" id="textCard">Ano 2019 <br /> R$ 200.000</p>
+                    <button type="button" class="btn bg-primary col-12" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar</button>                     
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+              <div class="card mb-3" id="card">
+                  <img src="img/bmwx2.jpg" class="card-img-top" id="imgs" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" id="textCard">Modelo: X2</h5>
+                    <p class="card-text" id="textCard">Ano 2022 <br /> R$ 217.000</p>
+                    <button type="button" class="btn bg-primary col-12" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar</button>
+                  </div>
+              </div>              
+          </div>
+          <div class="col-md-4 col-sm-6">
+              <div class="card mb-3" id="card">
+                  <img src="img/bmxx3.jpg" class="card-img-top" id="imgs" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" id="textCard">Modelo: X3</h5>
+                    <p class="card-text" id="textCard">Ano 2022 <br /> R$ 397.950</p>
+                    <button type="button" class="btn bg-primary col-12" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar</button>
+                  </div>
+              </div>                   
+          </div>                         
+      </div>            
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-4 col-sm-6" >
+              <div class="card mb-3" id="card">
+                  <img src="img/bmwx4.jpg" class="card-img-top" id="imgs" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" id="textCard">Modelo: X4</h5>
+                    <p class="card-text" id="textCard">Ano 2019 <br /> R$ 379.000</p>
+                    <button type="button" class="btn bg-primary col-12" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar</button>                     
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+              <div class="card mb-3" id="card">
+                  <img src="img/bmwx5.jpg" class="card-img-top" id="imgs" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" id="textCard">Modelo: X5</h5>
+                    <p class="card-text" id="textCard">Ano 2016 <br /> R$ 246.000</p>
+                    <button type="button" class="btn bg-primary col-12" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar</button>
+                  </div>
+              </div>              
+          </div>
+          <div class="col-md-4 col-sm-6">
+              <div class="card mb-3" id="card">
+                  <img src="img/bmwx6.jpg" class="card-img-top" id="imgs" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title" id="textCard">Modelo: X6</h5>
+                    <p class="card-text" id="textCard">Ano 2022 <br /> R$ 395.799</p>
+                    <button type="button" class="btn bg-primary col-12" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar</button>
+                  </div>
+              </div>                   
+          </div>                         
+      </div>            
+    </div>
+
+    
+    <!-- A baixo temos o codigo da criacao do modal -->
+
+    <div class="modal fade" tabindex="-1" id="modalCompra">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Ops...</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p> Ainda não temos como vender, pedimos desculpas.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Entendi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+        
+       
+  </body>
+</html>

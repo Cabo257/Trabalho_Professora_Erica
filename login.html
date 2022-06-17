@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Login</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+      <link href="bootstrap/dist/css/bootstrap.min.css"    rel="stylesheet" type="text/css">
+      <script src="bootstrap/dist/js/bootstrap.bundle.min.js"  ></script>
+      <script defer src="fontawesome-free-5.15.4-web/js/all.js"  ></script>
+  </head>
+  <body style="background-color: #616161;">
+
+    <!-- Aqui é criado a barra do menu principal -->
+
+    <nav class="navbar navbar-dark" >      
+      <div class="container-fluid">         
+        <button class="navbar-toggler"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <i class="fa fa-bars" style="color:#007bff; font-size:28px;"></i>        
+        </button>
+        <a class="navbar-brand" id="navColor" href="index.html">BMW</a>
+        <a title="Login" href="login.html" id="navColor"><i class="far fa-user" id="iconeMenu" ></i></a>
+        <div class="offcanvas offcanvas-start bg-dark"   tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-body"> 
+            <div class="offcanvas-header">     
+            </div> <br>
+            <ul class="navbar-nav  flex-grow-1 pe-3 bg-dark" >
+              <li class="nav-item">
+                <a class="nav-link item active" aria-current="page" href="index.html" id="navColor">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link item" href="produtos.html" id="navColor">Produtos</a>
+              </li>
+            
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container" >
+      <div class="justify-content-center align-items-center row">
+        <div class="col-6 col-sm-6" >
+          <br>          
+          <div class="card mb-3" >
+            
+            <div class="card-body" style="width: 100%;"> <br>
+              
+              <h5 class="card-title" style="color: #007bff; text-align: center;">Login</h5> <br> <br>
+              <div id="liveAlertPlaceholder"></div>
+              <form>
+                <div class="mb-3">
+                  <label for="usuario" class="form-label" style="color: #007bff;">Usuário:</label>
+                  <input type="text" class="form-control" id="usuario" required="required">
+                </div> 
+                <div class="mb-3">
+                  <label for="senha" class="form-label" style="color: #007bff;" >Senha:</label>
+                  <input type="password" class="form-control" id="senha" required="required">
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  
+                  <br />
+                  <button type="submit" class="btn btn-success " id="btnLogar" >Entrar</button>
+                  <a type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#cadastro">Cadastre-se</a>
+                </div>               
+                
+              </form>
+              
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- A baixo temos o codigo da criacao do modal -->
+
+    <div class="modal fade" id="cadastro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #000;">
+            <h5 class="modal-title" style="color: #007bff;">Cadastro</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="background-color: #616161;">
+            <div class="container" >
+              <div class="justify-content-center align-items-center row">
+                <div class="col-md-12 col-sm-6" >
+                  <form class="row" >
+                    <div class="col-md-6">
+                      <label for="nome" class="form-label" style="color: #000;">Nome:</label>
+                      <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="sobrenome" class="form-label" style="color: #000;">Sobrenome:</label>
+                      <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu Sobrenome" required>
+                    </div>                    
+                    <div class="col-md-4">
+                      <label for="sexo" class="form-label" style="color: #000;">Sexo:</label>
+                      <select id="sexo" class="form-select" required>
+                        <option selected disabled value="">Selecione...</option>
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Outro</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="cpf" class="form-label" style="color: #000;">CPF:</label>
+                      <input type="number" class="form-control" id="cpf" required>
+                    </div> 
+                    <div class="col-md-4">
+                      <label for="cep" class="form-label" style="color: #000;">CEP:</label>
+                      <input type="number" class="form-control" id="sobrenome" placeholder="Digite o cep " required>
+                    </div>
+                    <div class="col-md-8">
+                      <label for="endereco" class="form-label" style="color: #000;">Endereço:</label>
+                      <input type="text" class="form-control" id="sobrenome" placeholder="Digite o endereço" required>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="sobrenome" class="form-label" style="color: #000;">Número:</label>
+                      <input type="number" class="form-control" id="sobrenome" placeholder="N° " required>
+                    </div> 
+                    <div class="col-12 text-end">
+                      <button type="submit" class="btn"style="margin-top: 10px; background-color: #fff; color: #000"  data-bs-toggle="modal" data-bs-target="#finalizarCadastro">Avançar</button>
+                    </div>                                         
+                  </form>              
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal fade" id="finalizarCadastro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #000;">
+            <h5 class="modal-title" style="color: #007bff;">Cadastro</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+
+          
+          <div class="modal-body" style="background-color: #616161;">
+            <div class="container" >
+              <div class="justify-content-center align-items-center row">
+                <div class="col-md-12 col-sm-6" >
+                  <form class="row" >
+                    <div class="col-md-12">
+                      <label for="enderecoEmail" class="form-label" style="color: #000;">E-mail:</label>
+                      <input type="email" class="form-control" id="email" aria-describedby="enderecoEmail" placeholder="Ex: nome@gmail.com"required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="senha" class="form-label" style="color: #000000;">Senha:</label>
+                      <input type="password" class="form-control" id="cadSenha" placeholder="Digite a senha" required>
+                    </div>   
+                    <div class="col-md-6">
+                      <label for="confirmaSenha" class="form-label" style="color: #000;">Confirmar senha:</label>
+                      <input type="password" class="form-control" id="cadConfirmaSenha" placeholder="Digite a senha" required>
+                    </div>                  
+                    <div class="col-12 text-end">
+                      <button class="btn btn-secondary" style="margin-top: 10px;" data-bs-toggle="modal" data-bs-target="#cadastro">Voltar</button>
+                      <button type="submit" class="btn btn-success "  name="btn_cadastrar" id="btn_cadastrar" style="margin-top: 10px;" onclick="confirmaSenha()">Salvar</button>
+                    </div>                      
+                  </form>              
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+
+    
+      
+  </body>
+</html>
